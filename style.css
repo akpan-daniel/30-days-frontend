@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-size: 100%;
+  /* outline: 1px solid green; */
+}
+
+body {
+  background: #eee;
+}
+
+header {
+  background: rgb(66, 63, 59);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 0em 10%;
+}
+.nav__main {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+}
+
+.nav__head {
+  font-family: "Major Mono Display";
+  font-size: 1.5em;
+  color: #eee;
+  cursor: pointer;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0 1.25em;
+}
+
+.nav__links li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #eee;
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: rgba(255, 255, 229, 0.5);
+}
+
+button {
+  padding: 0.5em 1.5em;
+  background-color: rgb(255, 229, 169);
+  color: rgb(66, 63, 59);
+  border: none;
+  border-radius: 3em;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  border: 1px rgb(255, 229, 169) solid;
+  background: rgb(66, 63, 59);
+  color: #eee;
+}
