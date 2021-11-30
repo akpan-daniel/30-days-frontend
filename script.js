@@ -12,7 +12,7 @@ fetch("./challenges.json")
         <div class="card-body">
           <h5 class="card-title">${el.title}</h5>
           <p class="card-text">${el.title}</p>
-          <a href="#" class="btn btn-primary">Day ${el.day}</a>
+          <a href="${el.link}" class="btn btn-primary">Day ${el.day}</a>
         </div>
       </div>
       </div>
