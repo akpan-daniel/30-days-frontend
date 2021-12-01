@@ -19,6 +19,7 @@ body {
 .card {
   background-color: hsl(216, 50%, 16%);
   border-radius: 1em;
+  max-width: 366px;
   width: fit-content;
   margin: 1em auto;
   padding: 1.25em;
@@ -26,7 +27,6 @@ body {
 
 .card-image {
   width: 100%;
-  max-width: 366px;
   height: 17.5rem;
   border-radius: 0.5em;
   margin-bottom: 1em;
