@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
 body {
   margin: 0;
   padding: 0;
@@ -25,6 +26,10 @@ body {
   padding: 1.25em;
 }
 
+.card-image-container {
+  position: relative;
+}
+
 .card-image {
   width: 100%;
   height: 17.5rem;
@@ -32,10 +37,43 @@ body {
   margin-bottom: 1em;
 }
 
+.card-image-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 17.5rem;
+  opacity: 0;
+  transition: 0.2s ease;
+  border-radius: 0.5em;
+  background-color: hsla(178, 100%, 50%, 0.5);
+}
+
+.card-image-container:hover .card-image-overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.card-overlay-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .card-title {
   color: hsl(0, 0%, 100%);
   font-weight: 600;
   font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.card-title:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
 }
 /* * {
   outline: 1px solid green;
@@ -58,14 +96,15 @@ body {
   align-items: center;
   height: inherit;
   color: hsl(178, 100%, 50%);
-  font-size: 0.8em;
-  font-weight: 400;
+  font-size: 1em;
+  font-weight: 600;
   word-spacing: 0.2em;
   margin: 0;
 }
 
 .card-info-time {
   margin: 0;
+  font-size: 1em;
 }
 
 hr {
@@ -93,4 +132,9 @@ hr {
 
 .card-footer-text span {
   color: hsl(0, 0%, 100%);
+}
+
+.card-footer-text span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
 }
