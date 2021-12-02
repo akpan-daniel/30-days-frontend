@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  /* outline: 1px dashed green; */
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.background-cover {
+  background-image: url("./images/pattern-background-mobile.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: -10%;
+  bottom: 65%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1em;
+  padding-bottom: 0.1em;
+  text-align: center;
+  width: 330px;
+  height: fit-content;
+  margin: 1em auto;
+}
+
+.card__thumbnail {
+  border-radius: 1em 1em 0 0;
+  width: 100%;
+}
+
+.card__body {
+  margin: 1.75em 1.5em;
+}
+
+.card__body h3 {
+  font-size: 1.25em;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.card__body p {
+  margin: 1.2em 0.75em;
+  text-indent: 1em;
+  line-height: 1.5em;
+  color: hsla(223, 47%, 23%, 0.8);
+}
+
+.plan__detail {
+  margin: 1.5em 0;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  align-items: center;
+}
+
+.plan__detail a {
+  font-size: 0.75rem;
+  font-weight: 900;
+  color: hsl(245, 75%, 52%);
+}
+
+.plan__detail a:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+.plan__detail div {
+  display: flex;
+}
+
+.plan__detail div div {
+  display: inline;
+  margin-left: 1em;
+  /* padding: 0.25em; */
+}
+
+.plan__detail h4 {
+  font-weight: 900;
+  font-size: 0.9rem;
+  margin: 0.3em;
+  color: hsl(223, 47%, 23%);
+}
+
+.plan__detail div div h4:last-child {
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+
+.card__footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__footer button {
+  background-color: hsl(245, 75%, 52%);
+  padding: 1em;
+  border-radius: 0.75em;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 0.9em;
+  box-shadow: 1em 1em 2em hsla(224, 23%, 55%, 0.5);
+  cursor: pointer;
+}
+
+.card__footer button:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+
+.card__footer a {
+  font-weight: 700;
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  margin-top: 2em;
+}
+
+.card__footer a:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media (min-width: 720px) {
+  .background-cover {
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 100vw;
+    z-index: -1;
+    top: -10%;
+    height: 60vh;
+  }
+
+  .card {
+    width: 450px;
+  }
+
+  .card__body {
+    margin: 2em;
+  }
+
+  .card__body h3 {
+    font-size: 1.5em;
+  }
+
+  .card__body p {
+    margin: 1.5em;
+  }
+
+  .plan__detail img {
+    height: 4em;
+  }
+
+  .plan__detail h4 {
+    font-size: 1rem;
+  }
+}
