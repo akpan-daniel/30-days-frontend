@@ -15,9 +15,16 @@
   },
   {
     "day": 3,
-    "title": "NFT Preview Card",
+    "title": "Four card feature section",
     "badge": "newbie",
     "link": "./day 3/index.html",
     "image_url": "https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/wbsdema37uawkvkp9lab.jpg"
+  },
+  {
+    "day": 3,
+    "title": "Stats preview card component",
+    "badge": "newbie",
+    "link": "./day 4/index.html",
+    "image_url": "https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/t26y9p3veejvbc9biv3f.jpg"
   }
 ]
