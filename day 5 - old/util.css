@@ -1,0 +1,38 @@
+.shadow {
+  box-shadow: 0 0.75em 0 0 rgb(0, 0, 0, 0.15);
+}
+
+.btn {
+  padding: 1.5em;
+  border-radius: 0.5em;
+}
+
+.is-d-even {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.is-primary {
+  background-color: var(--blue);
+}
+
+.is-light {
+  background-color: white;
+  color: black;
+}
+
+.input-field {
+  padding: 1.5em;
+  width: 100%;
+  border-radius: 0.5em;
+  margin: 0.5em 0;
+  border: 1px solid var(--gray-blue);
+  font-weight: 600;
+}
+
+.card {
+  border-radius: 1em;
+  padding: 7.5%;
+  margin: 2em 0;
+}

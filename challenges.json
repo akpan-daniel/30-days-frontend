@@ -21,10 +21,17 @@
     "image_url": "https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/wbsdema37uawkvkp9lab.jpg"
   },
   {
-    "day": 3,
+    "day": 4,
     "title": "Stats preview card component",
     "badge": "newbie",
     "link": "./day 4/index.html",
     "image_url": "https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/t26y9p3veejvbc9biv3f.jpg"
+  },
+  {
+    "day": 5,
+    "title": "Intro component with sign-up form",
+    "badge": "newbie",
+    "link": "./day 5/index.html",
+    "image_url": "https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/mnmpkjsbvur3xvrydf66.jpg"
   }
 ]
