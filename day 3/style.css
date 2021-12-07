@@ -21,9 +21,9 @@
   --text-bold: 600;
 }
 
-* {
+/* * {
   outline: 1px solid green;
-}
+} */
 
 *,
 *::before,
@@ -145,7 +145,7 @@ body {
   }
   .container {
     width: auto;
-    margin: 5em 0;
+    /* margin: 5em 0; */
     /* padding: 1em; */
   }
   .hero {
@@ -154,6 +154,10 @@ body {
 
   .hero > h1 {
     font-size: 1.8rem;
+  }
+
+  .hero > p {
+    width: 65%;
   }
 
   .cards {
