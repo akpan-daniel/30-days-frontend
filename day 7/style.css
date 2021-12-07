@@ -163,13 +163,13 @@ body {
   }
 
   .card {
-    width: 46vw;
+    width: 45vw;
   }
 
   .t-content,
   .l-content,
   .r-content {
-    padding: 2.5rem 1.6rem;
+    padding: 2.25rem 1.6rem;
   }
 
   .t-content h1 {
