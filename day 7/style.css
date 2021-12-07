@@ -26,7 +26,7 @@
   box-sizing: border-box;
   font-family: var(--font-family);
   font-size: var(--font-size);
-  outline: 1px solid black;
+  /* outline: 1px solid black; */
 }
 
 body {
@@ -125,6 +125,7 @@ body {
   margin: 1.8rem 0 0;
   box-shadow: 0 0.5em 0.5em 0.25em hsla(0, 0%, 0%, 0.05),
     0 0 0 0.1em hsla(0, 0%, 0%, 0.1);
+  cursor: pointer;
 }
 
 .r-content {
@@ -144,4 +145,46 @@ body {
 
 .r-content li p {
   font-size: 0.9rem;
+}
+
+@media (min-width: 700px) {
+  body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    width: 60vw;
+  }
+
+  .t-content,
+  .l-content,
+  .r-content {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .b-content {
+    display: flex;
+  }
+
+  .l-content,
+  .r-content {
+    width: 50%;
+  }
+
+  .l-content {
+    border-radius: 0 0 0 0.5rem;
+  }
+
+  .r-content {
+    border-radius: 0 0 0.5rem 0;
+  }
+
+  .attribution {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+  }
 }
