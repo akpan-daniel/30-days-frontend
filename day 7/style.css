@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  /* Color */
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --gray-blue: hsl(218, 22%, 67%);
+
+  /* Font */
+  --font-light: 400;
+  --font-bold: 700;
+  --font-family: "Karla";
+  --font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  outline: 1px solid black;
+}
+
+body {
+  background-color: var(--light-gray);
+}
+
+.card-container {
+  width: fit-content;
+  margin: 4.2rem auto 2rem;
+}
+
+.card {
+  /* border-radius: 0.5rem; */
+  width: 330px;
+}
+
+.container {
+  margin: 0 1.5rem;
+}
+
+.t-content {
+  padding: 1.75rem 0;
+}
+
+.t-content {
+  background-color: #fffe;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.t-content h1 {
+  color: var(--cyan);
+  font-weight: var(--font-bold);
+  font-size: 1.25rem;
+  /* margin: 0 0 1.5rem; */
+}
+
+.t-content h3 {
+  color: var(--bright-yellow);
+  font-weight: var(--font-bold);
+  margin: 1.5rem 0;
+}
+
+.t-content p {
+  color: var(--gray-blue);
+  font-family: var(--font-light);
+  font-size: 0.9rem;
+  line-height: 1.55rem;
+}
+
+.b-content {
+  color: #fffe;
+}
+
+.l-content,
+.r-content {
+  padding: 1.7rem 0 1.5rem;
+}
+
+.l-content {
+  background-color: var(--cyan);
+}
+
+.l-content h3,
+.r-content h3 {
+  font-size: 1.1rem;
+}
+
+.l-content p,
+.r-content p {
+  font-weight: var(--font-light);
+}
+
+.l-content .price-container {
+  margin: 1.2rem 0 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.l-content p.price {
+  font-weight: var(--font-bold);
+  font-size: 2rem;
+}
+
+.l-content span {
+  color: #fff8;
+  margin: 0 1rem;
+}
+
+.l-content button {
+  width: 100%;
+  background-color: var(--bright-yellow);
+  color: #fffe;
+  font-weight: var(--font-bold);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1.8rem 0 0;
+  box-shadow: 0 0.5em 0.5em 0.25em hsla(0, 0%, 0%, 0.05),
+    0 0 0 0.1em hsla(0, 0%, 0%, 0.1);
+}
+
+.r-content {
+  background-color: hsla(179, 62%, 43%, 0.75);
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.r-content ul {
+  margin: 1rem 0 0;
+  list-style: none;
+  color: #fff9;
+}
+
+.r-content ul li {
+  margin: 0.25rem 0;
+}
+
+.r-content li p {
+  font-size: 0.9rem;
+}

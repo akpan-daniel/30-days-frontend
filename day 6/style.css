@@ -19,7 +19,7 @@
 }
 
 * {
-  /* outline: 1px solid green; */
+  outline: 1px solid green;
   color: var(--light-red);
   box-sizing: border-box;
 }
@@ -39,6 +39,7 @@ body {
 .logo {
   width: 100%;
   background-color: white;
+  text-align: left;
 }
 
 .logo img {
@@ -61,11 +62,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("./images/hero-mobile.jpg");
-}
-
-.image-container::after {
-  background-image: url("./images/hero-mobile.jpg");
-  content: " ";
 }
 
 .content {
@@ -121,4 +117,27 @@ body {
 
 button img {
   width: 1rem;
+}
+
+@media (min-width: 500px) {
+  .image-container {
+    display: none;
+  }
+  .container {
+    width: 80vw;
+    margin: auto;
+  }
+
+  .flex-box {
+    /* flex-direction: row; */
+    width: 60%;
+    height: 98vh;
+  }
+
+  .logo {
+    background-color: #00000000;
+  }
+  .logo img {
+    width: 10rem;
+  }
 }
