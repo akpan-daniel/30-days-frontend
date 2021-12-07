@@ -21,9 +21,9 @@
   --text-bold: 600;
 }
 
-/* * {
+* {
   outline: 1px solid green;
-} */
+}
 
 *,
 *::before,
@@ -36,8 +36,8 @@
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   text-align: center;
   min-height: 100vh;
   font-family: var(--font-family);
@@ -145,7 +145,8 @@ body {
   }
   .container {
     width: auto;
-    margin: 0;
+    margin: 5em 0;
+    /* padding: 1em; */
   }
   .hero {
     margin: 4em 19em 0;
@@ -157,7 +158,8 @@ body {
 
   .cards {
     display: flex;
-    flex-basis: content;
+    align-items: center;
+    justify-content: center;
     margin-top: 1em;
   }
 
