@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 
+* {
+  outline: 1px solid green;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,12 +13,6 @@ body {
   font-weight: 300;
   background-color: hsl(217, 54%, 11%);
   color: hsl(215, 51%, 70%);
-}
-
-.container {
-  width: 90%;
-  margin: auto;
-  align-items: center;
 }
 
 .card {
@@ -75,9 +73,7 @@ body {
   color: hsl(178, 100%, 50%);
   cursor: pointer;
 }
-/* * {
-  outline: 1px solid green;
-} */
+
 .card-text {
   margin-top: 0.85em;
   /* margin-bottom: -0.3em; */
@@ -137,4 +133,25 @@ hr {
 .card-footer-text span:hover {
   color: hsl(178, 100%, 50%);
   cursor: pointer;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+}
+
+@media (min-width: 500px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .card {
+    margin: 0;
+  }
 }
