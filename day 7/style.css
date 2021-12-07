@@ -39,8 +39,9 @@ body {
 }
 
 .card {
-  /* border-radius: 0.5rem; */
+  border-radius: 0.5rem;
   width: 330px;
+  box-shadow: 0 1em 1em 1em hsla(0, 0%, 0%, 0.05);
 }
 
 .container {
@@ -120,7 +121,7 @@ body {
   background-color: var(--bright-yellow);
   color: #fffe;
   font-weight: var(--font-bold);
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   padding: 1rem;
   margin: 1.8rem 0 0;
   box-shadow: 0 0.5em 0.5em 0.25em hsla(0, 0%, 0%, 0.05),
@@ -150,10 +151,17 @@ body {
 @media (min-width: 700px) {
   body {
     position: relative;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
+  .card-container {
+    height: fit-content;
+    margin: 0;
+  }
+
   .card {
     width: 45vw;
   }
@@ -161,7 +169,11 @@ body {
   .t-content,
   .l-content,
   .r-content {
-    padding: 2.5rem 1.5rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .t-content h1 {
+    font-size: 1.4rem;
   }
 
   .b-content {
@@ -175,6 +187,10 @@ body {
 
   .l-content {
     border-radius: 0 0 0 0.5rem;
+  }
+
+  .l-content p {
+    font-size: 0.9rem;
   }
 
   .r-content {
