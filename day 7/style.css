@@ -64,7 +64,7 @@ body {
   /* margin: 0 0 1.5rem; */
 }
 
-.t-content h3 {
+.t-content h2 {
   color: var(--bright-yellow);
   font-weight: var(--font-bold);
   margin: 1.5rem 0;
@@ -90,8 +90,8 @@ body {
   background-color: var(--cyan);
 }
 
-.l-content h3,
-.r-content h3 {
+.l-content h2,
+.r-content h2 {
   font-size: 1.1rem;
 }
 
@@ -163,13 +163,13 @@ body {
   }
 
   .card {
-    width: 45vw;
+    width: 46vw;
   }
 
   .t-content,
   .l-content,
   .r-content {
-    padding: 2rem 1.5rem;
+    padding: 2.5rem 1.6rem;
   }
 
   .t-content h1 {
