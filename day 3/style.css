@@ -36,8 +36,8 @@
 body {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
+  justify-content: center;
+  align-items: center;
   text-align: center;
   min-height: 100vh;
   font-family: var(--font-family);
@@ -140,6 +140,13 @@ body {
 }
 
 @media (min-width: 720px) {
+  body {
+    height: 100vh;
+  }
+  .container {
+    width: auto;
+    margin: 0;
+  }
   .hero {
     margin: 4em 19em 0;
   }
