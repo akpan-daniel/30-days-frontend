@@ -51,7 +51,7 @@ main {
 
 .container {
   width: 80vw;
-  margin: 3.7em auto 0;
+  margin: 4em auto 0;
   display: flex;
   flex-direction: column;
   text-align: center;
