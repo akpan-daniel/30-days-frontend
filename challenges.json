@@ -47,5 +47,12 @@
     "badge": "newbie",
     "link": "./day 7/index.html",
     "image_url": "https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/ouvhkqeq9dhokut9payi.jpg"
+  },
+  {
+    "day": 8,
+    "title": "Huddle landing page with a single introductory section",
+    "badge": "newbie",
+    "link": "./day 8/index.html",
+    "image_url": "https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/m8aueljlhfwzve7zxpy7.jpg"
   }
 ]
