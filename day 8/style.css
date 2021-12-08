@@ -16,7 +16,7 @@
 * {
   font-size: 16px;
   box-sizing: border-box;
-  /* outline: 1px solid white; */
+  outline: 1px solid white;
   color: white;
 }
 
@@ -92,7 +92,6 @@ main {
   color: var(--violet);
   font-size: 0.8rem;
   cursor: pointer;
-  /* box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.8); */
   box-shadow: 0 0 0.4em 0 rgba(0, 0, 0, 0.8);
 }
 
@@ -153,10 +152,56 @@ i {
   }
 
   .logo {
-    margin: 2.5em 4.5em;
+    margin: 7vh 5vw 0;
   }
 
   .logo img {
     width: 12vw;
+  }
+
+  .container {
+    margin-top: 11vh;
+    width: 90vw;
+    height: 80vh;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .left-container {
+    width: 55%;
+  }
+
+  .left-container img {
+    width: 100%;
+  }
+
+  .right-container {
+    position: relative;
+    width: 40%;
+    text-align: left;
+  }
+
+  .right-container h1 {
+    font-size: 2.75rem;
+  }
+
+  .right-container p {
+    font-size: 1.15rem;
+  }
+
+  .right-container button {
+    margin-left: 0;
+    width: 33%;
+  }
+
+  .right-container ul {
+    position: absolute;
+    right: 0;
+  }
+
+  .attribution {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
   }
 }
