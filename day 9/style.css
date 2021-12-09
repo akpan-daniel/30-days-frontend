@@ -134,21 +134,65 @@ ul > li {
 li > div {
   border-radius: 50%;
   border: 1px solid var(--pale-blue);
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
+  display: flex;
   justify-content: center;
   align-content: center;
 }
 
 span > i {
   color: var(--blue);
+  transform: translate(0%, 15%);
   vertical-align: bottom;
 }
 
 li > div:hover {
   background-color: var(--blue);
+  border: none;
 }
 
 li > div:hover i {
   color: white;
+}
+
+@media (min-width: 540px) {
+  main {
+    width: 45vw;
+  }
+
+  .logo {
+    margin: 1.5em 0;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.25rem;
+    margin: 0.5em auto 1.5em;
+  }
+
+  .subscribe {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .subscribe form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .subscribe input {
+    width: 66%;
+  }
+
+  .subscribe button {
+    width: 32%;
+  }
+
+  .banner {
+    margin: 2em 0;
+  }
 }
