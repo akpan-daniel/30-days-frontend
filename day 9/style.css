@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;1,600;1,700&display=swap");
+
+:root {
+  /* Color */
+  --blue: hsl(223, 87%, 63%);
+
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+
+  --gray: hsl(0, 0%, 59%);
+  --dark-blue: hsl(209, 33%, 12%);
+
+  /* Font */
+  --font-family: "Libre Franklin";
+  --font-size: 20px;
+  --font-light: 300;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+}
+
+* {
+  /* outline: 1px solid green; */
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+body {
+  font-size: var(--font-size);
+  font-family: var(--font-family), sans-serif;
+  text-align: center;
+  color: var(--dark-blue);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 3em 0;
+}
+
+main {
+  width: 90vw;
+  margin: auto;
+}
+
+.hero {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 1.5rem;
+  font-weight: var(--font-bold);
+  word-spacing: 0.2rem;
+}
+
+.hero h1 span {
+  font-weight: var(--font-light);
+  color: var(--gray);
+}
+
+.hero p {
+  font-size: 1rem;
+  font-weight: var(--font-light);
+  margin: 1rem 0;
+}
+
+.subscribe {
+  margin: 1.5em auto;
+  width: 90%;
+}
+
+.subscribe form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form button {
+  padding: 1em 2.5em;
+  border-radius: 2em;
+  margin: 0.5em 0;
+}
+
+form input {
+  border: 1px solid var(--pale-blue);
+}
+
+form input::placeholder {
+  color: var(--pale-blue);
+}
+
+form button {
+  background-color: var(--blue);
+  color: #fff;
+  font-weight: var(--font-semi-bold);
+  cursor: pointer;
+  box-shadow: 0 0.25em 0.5em 0.25em hsla(223, 87%, 63%, 0.25);
+}
+
+form button:hover {
+  background-color: var(--pale-blue);
+}
+
+.banner {
+  margin: 4em 0 5em;
+  width: 100%;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.socials ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 33%;
+  margin: 1em auto;
+}
+
+ul > li {
+  margin: 0.5em;
+}
+
+li > div {
+  border-radius: 50%;
+  border: 1px solid var(--pale-blue);
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-content: center;
+}
+
+span > i {
+  color: var(--blue);
+  vertical-align: bottom;
+}
+
+li > div:hover {
+  background-color: var(--blue);
+}
+
+li > div:hover i {
+  color: white;
+}
