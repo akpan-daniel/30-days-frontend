@@ -61,5 +61,12 @@
     "badge": "newbie",
     "link": "./day 9/index.html",
     "image_url": "https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/i30yb3bo5vfag44bojox.jpg"
+  },
+  {
+    "day": 10,
+    "title": "Ping single column coming soon page",
+    "badge": "newbie",
+    "link": "./day 10/index.html",
+    "image_url": "https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/m8aueljlhfwzve7zxpy7.jpg"
   }
 ]
