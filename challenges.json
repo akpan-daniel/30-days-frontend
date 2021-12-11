@@ -65,8 +65,15 @@
   {
     "day": 10,
     "title": "Ping single column coming soon page",
-    "badge": "newbie",
+    "badge": "junior",
     "link": "./day 10/index.html",
     "image_url": "https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/m8aueljlhfwzve7zxpy7.jpg"
+  },
+  {
+    "day": 11,
+    "title": "Social proof section",
+    "badge": "newbie",
+    "link": "./day 11/index.html",
+    "image_url": "https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/c5mnesn5eknealmjz4w2.jpg"
   }
 ]
