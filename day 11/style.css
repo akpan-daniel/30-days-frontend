@@ -26,6 +26,8 @@ body {
   background-position: top, bottom;
   background-repeat: no-repeat, no-repeat;
   background-size: contain, contain;
+
+  counter-reset: left-spacing;
 }
 
 main {
@@ -37,13 +39,13 @@ main {
   text-align: center;
 }
 
-.top-right h1 {
+.top-left h1 {
   font-size: 2em;
   font-weight: var(--font-bold);
   color: var(--dark-magenta);
 }
 
-.top-right p {
+.top-left p {
   color: var(--dark-gray-magenta);
   margin: 1em 0;
   line-height: 1.5em;
@@ -51,7 +53,7 @@ main {
   font-size: 0.92em;
 }
 
-.top-left {
+.top-right {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -91,9 +93,6 @@ main {
   /* justify-content: space-between; */
 }
 
-.testimonial .profile-pic {
-}
-
 .profile-pic img {
   width: 2.5em;
   height: 2.5em;
@@ -126,4 +125,99 @@ main {
   font-size: 0.83em;
   color: var(--light-gray-magenta);
   /* opacity: 0; */
+}
+
+@media (min-width: 540px) {
+  body {
+    background-image: url("./images/bg-pattern-top-desktop.svg"),
+      url("./images/bg-pattern-bottom-desktop.svg");
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 42vw auto, 80vw auto;
+  }
+  main {
+    width: 80vw;
+  }
+
+  .top-div {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+  }
+
+  .top-left {
+    width: 45%;
+  }
+
+  .top-right {
+    width: 50%;
+  }
+
+  .top-left h1 {
+    font-size: 2em;
+  }
+
+  .top-left p {
+    font-size: 1em;
+  }
+
+  .top-right {
+    height: 100%;
+  }
+
+  .review-card {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 1.2em;
+    margin-right: counter(left-spacing);
+    counter-increment: left-spacing 10;
+  }
+
+  .review-card div {
+    height: fit-content;
+    margin: auto 0;
+    width: 35%;
+  }
+
+  .review-card p {
+    margin: 0 1em;
+  }
+
+  .testimonials {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+  }
+
+  .testimonial {
+    width: 31%;
+    margin: 1em 0;
+    padding: 2em;
+    min-height: fit-content;
+  }
+}
+
+@media (min-width: 800px) {
+  .top-left h1 {
+    font-size: 4em;
+  }
+  .review-card:nth-child(2) {
+    margin-left: 10%;
+  }
+
+  .review-card:nth-child(3) {
+    margin-left: 20%;
+  }
+
+  .testimonial:nth-child(2) {
+    margin-top: 2em;
+  }
+
+  .testimonial:nth-child(3) {
+    margin-top: 3em;
+  }
 }
