@@ -178,6 +178,7 @@ footer ul {
 
 footer p {
   font-size: 0.8rem;
+  padding-bottom: 1em;
 }
 
 .footer-logo {
@@ -241,4 +242,129 @@ footer p {
 i {
   transform: translate(0%, 10%);
   vertical-align: bottom;
+}
+
+@media (min-width: 480px) {
+  body {
+    text-align: left;
+  }
+
+  .hero {
+    height: 100vh;
+    background-image: url("./images/bg-hero-desktop.svg");
+  }
+
+  .nav-btn {
+    width: 12%;
+  }
+
+  .hero-body {
+    margin: 3em 0;
+  }
+
+  .hero-body > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero-writeup {
+    width: 45%;
+    height: auto;
+    margin: auto;
+    align-content: center;
+  }
+
+  .pretty-btn {
+    width: 20em;
+  }
+
+  .hero-image {
+    width: 50%;
+    margin: 0;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    height: fit-content;
+    justify-content: space-between;
+  }
+
+  .card:nth-child(2) {
+    flex-direction: row;
+  }
+
+  .card img {
+    /* margin: 1em; */
+    width: 100%;
+  }
+
+  .card div {
+    width: 30%;
+  }
+
+  .card div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 60%;
+  }
+
+  .card-last {
+    width: 40%;
+  }
+
+  .card-last div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+  }
+
+  .card-last h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-last .pretty-btn {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .footer-logo {
+    margin-left: 5vw;
+    width: 12em;
+  }
+
+  footer .container > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  footer .container > div > div {
+    width: 30%;
+  }
+
+  .site-links {
+    margin: 0;
+  }
+
+  .site-links ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .site-links ul > div {
+    width: 50%;
+  }
+
+  .socials {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
