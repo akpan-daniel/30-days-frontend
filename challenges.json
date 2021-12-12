@@ -75,5 +75,12 @@
     "badge": "newbie",
     "link": "./day 11/index.html",
     "image_url": "https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/c5mnesn5eknealmjz4w2.jpg"
+  },
+  {
+    "day": 12,
+    "title": "Pricing component",
+    "badge": "junior",
+    "link": "./day 12/index.html",
+    "image_url": "https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/r2ntg9yanvjruk8rbdxn.jpg"
   }
 ]
