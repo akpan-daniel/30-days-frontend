@@ -15,9 +15,9 @@
   --font-weight: 700;
 }
 
-* {
-  /* outline: 1px solid green; */
-}
+/* * {
+  outline: 1px solid green;
+} */
 
 body {
   font-size: var(--font-size);
@@ -162,5 +162,26 @@ main {
     background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
     background-position: right top, left bottom;
     background-repeat: no-repeat, no-repeat;
+  }
+
+  main {
+    width: 75vw;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .card {
+    margin: 0;
+    min-width: 333px;
+  }
+
+  .card:nth-child(2) {
+    min-width: 380px;
+    margin: -1.5em -0.75em;
+    position: relative;
   }
 }
