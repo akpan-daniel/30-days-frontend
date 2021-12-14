@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+:root {
+  /* Color */
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+
+  --dark-gray-blue: hsl(210, 10%, 33%);
+  --gray-blue: hsl(201, 11%, 66%);
+
+  /* Font */
+  --font-family: "Bai Jamjuree";
+  --font-size: 18px;
+  --font-normal: 400;
+  --font-bold: 600;
+}
+
+body {
+  font-family: var(--font-family), sans-serif;
+  font-weight: var(--font-normal);
+  font-size: var(--font-size);
+  text-align: center;
+  max-width: 100vw;
+}
+
+* {
+  outline: 1px solid green;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+section {
+  width: 100%;
+  padding: 4em 0;
+  color: var(--gray-blue);
+}
+
+section h1,
+section h2,
+section h3,
+section h4 {
+  color: var(--dark-gray-blue);
+  font-size: 1.5em;
+  font-weight: var(--font-bold);
+}
+
+section p {
+  font-size: 4.15vw;
+  margin: 2em 0;
+  line-height: 1.5em;
+}
+
+.hero {
+  background-image: url("./images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero img {
+  width: 40%;
+  margin: 2em 0;
+}
+
+.hero h1 {
+  font-size: 8vw;
+  width: 100%;
+}
+
+.btn-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-cont button {
+  display: inline-block;
+  padding: 1em;
+  margin: 0.5em 0;
+  border-radius: 2em;
+  color: white;
+  border-bottom: 0.2em solid rgba(0, 0, 0, 0.2);
+}
+
+.btn-cont button:first-child {
+  background-color: var(--strong-cyan);
+}
+
+.btn-cont button:last-child {
+  background-color: var(--light-blue);
+}
+
+.features {
+  /* padding: 2em 0; */
+}
+
+footer {
+  background-color: var(--gray-blue);
+  padding: 2em 0 0;
+}
+
+footer img {
+  width: 25%;
+}
+
+footer li {
+  margin: .5em 0;
+}
+
+footer > div > div
+
+

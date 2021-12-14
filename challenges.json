@@ -82,5 +82,12 @@
     "badge": "junior",
     "link": "./day 12/index.html",
     "image_url": "https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/pzkdrqu0lizrk8qgmiti.jpg"
+  },
+  {
+    "day": 13,
+    "title": "Clipboard landing page",
+    "badge": "junior",
+    "link": "./day 13/index.html",
+    "image_url": "https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/xiydlw7ggmnfnldlflit.jpg"
   }
 ]
