@@ -1,0 +1,144 @@
+@import "../reset";
+@import "./variables";
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  //   outline: 1px solid green;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: "Outfit";
+  font-size: $font-size;
+  font-weight: map-get($map: $font-weights, $key: "normal");
+  color: map-get($map: $colors, $key: "soft-blue");
+}
+
+#main {
+  background-color: map-get($map: $colors, $key: main-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  min-width: 300px;
+  max-width: 350px;
+  padding: 1em;
+  border-radius: 0.75em;
+  transform: scale(0.9);
+  background-color: map-get($map: $colors, $key: "card-bg");
+
+  &__image {
+    position: relative;
+    border-radius: inherit;
+    height: fit-content;
+    cursor: pointer;
+
+    &__overlay {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color: white;
+      border-radius: inherit;
+      opacity: 0;
+      transition: all 0.3s ease;
+      background-color: hsla(178, 100%, 50%, 0.5);
+
+      & img {
+        display: block;
+        width: 2.5em;
+        height: auto;
+      }
+    }
+
+    &:hover &__overlay {
+      opacity: 1;
+    }
+
+    & > img {
+      border-radius: inherit;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__body {
+    margin-top: 1.2em;
+
+    & > * {
+      margin-bottom: 1.2em;
+    }
+
+    & h1 {
+      font-size: 1.3em;
+      font-weight: map-get($map: $font-weights, $key: "bold");
+    }
+
+    & p {
+      line-height: 1.5em;
+    }
+
+    & .info {
+      display: flex;
+      justify-content: space-between;
+
+      & div {
+        display: flex;
+        align-content: center;
+        width: fit-content;
+
+        & img {
+          align-self: center;
+          margin-right: 0.5em;
+        }
+      }
+
+      & div:first-child {
+        color: map-get($map: $colors, $key: "cyan");
+      }
+    }
+  }
+
+  & hr {
+    border-color: map-get($map: $colors, $key: "soft-blue");
+    opacity: 0.2;
+  }
+
+  &__footer {
+    margin: 1.2em 0;
+    display: flex;
+    align-items: center;
+
+    & img {
+      border-radius: 50%;
+      border: 1px solid map-get($map: $colors, $key: "white");
+      width: 2em;
+      margin-right: 1em;
+    }
+  }
+}
+
+.hover-text {
+  color: map-get($map: $colors, $key: "white");
+  cursor: pointer;
+
+  &:hover {
+    color: map-get($map: $colors, $key: "cyan");
+  }
+}

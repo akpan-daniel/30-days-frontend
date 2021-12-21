@@ -6,15 +6,20 @@ fetch("./challenges.json")
   .then(() => {
     for (let el of obj) {
       let cont = `
-      <div class="col-md-6 col-lg-4">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="${el.image_url}" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">${el.title}</h5>
-          <p class="card-text">${el.title}</p>
-          <a href="${el.link}" class="btn btn-primary">Day ${el.day}</a>
+      <div class="row__item">
+        <div class="card">
+          <img class="card__img" src="${el.image_url}" alt="Card image cap">
+          <div class="card__body">
+
+            <h5>Day - ${el.day}</h5>
+
+            <p>${el.title}</p>
+            
+            
+            </div>
+            <a href="${el.link}" class="card__link">View Page</a>
+
         </div>
-      </div>
       </div>
       `;
       content.innerHTML += cont;
