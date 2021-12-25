@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+@import "../reset";
+@import "./variables";
+
+// * {
+//   outline: 1px solid green;
+// }
+
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: map-get($map: $font-weights, $key: "normal");
+}
+
+#main {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: map-get($map: $colors, $key: "pale-blue");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  min-width: 280px;
+  max-width: 350px;
+  text-align: center;
+  border-radius: 1em;
+  overflow: hidden;
+  background-color: #fff;
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__body {
+    margin: 1.75em;
+    width: 85%;
+    color: map-get($map: $colors, $key: "dark-blue");
+
+    h1 {
+      font-size: 1.25em;
+      font-weight: map-get($map: $font-weights, $key: "bold");
+    }
+
+    p {
+      margin: 1.2em 0;
+      opacity: 0.7;
+      line-height: 1.5em;
+    }
+
+    a {
+      color: map-get($map: $colors, $key: "bright-blue");
+      text-decoration: underline;
+      font-weight: map-get($map: $font-weights, $key: "semi-bold");
+
+      &:hover {
+        color: map-get($map: $colors, $key: "desaturated-blue");
+      }
+    }
+
+    .plan-box {
+      background-color: map-get($map: $colors, $key: "very-pale-blue");
+      border-radius: 0.5em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5em;
+      height: 4em;
+
+      img {
+        width: 3em;
+        height: auto;
+        display: block;
+      }
+
+      & > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // width: 50%;
+        height: 100%;
+      }
+
+      .plan {
+        * {
+          margin: 0;
+          padding: 0;
+        }
+
+        h2 {
+          font-weight: map-get($map: $font-weights, $key: "semi-bold");
+        }
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        // font-size: 0.5em;
+        height: 100%;
+        margin: 0 1em;
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    margin: 1.75em;
+
+    button {
+      background-color: map-get($map: $colors, $key: "bright-blue");
+      padding: 1em;
+      border-radius: 0.5em;
+      color: map-get($map: $colors, $key: "pale-blue");
+      font-weight: map-get($map: $font-weights, $key: "semi-bold");
+      box-shadow: 0 1em 1em 0.3em rgba(0, 0, 0, 0.2);
+
+      &:hover {
+        background-color: map-get($map: $colors, $key: "desaturated-blue");
+      }
+    }
+
+    a {
+      margin: 1.2em;
+      color: map-get($map: $colors, $key: "desaturated-blue");
+      font-weight: map-get($map: $font-weights, $key: "semi-bold");
+
+      &:hover {
+        color: map-get($map: $colors, $key: "dark-blue");
+      }
+    }
+  }
+}
