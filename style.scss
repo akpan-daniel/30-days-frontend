@@ -1,0 +1,116 @@
+@import "./_reset";
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+
+@mixin mobile {
+  @media (max-width: 700px) {
+    @content;
+  }
+}
+
+body {
+  font-family: "Major Mono Display", monospace;
+  font-size: 15em;
+  background-color: #272727;
+}
+
+.navbar {
+  background-color: darken($color: skyblue, $amount: 50%);
+  text-transform: uppercase;
+  color: white;
+  padding: 1.5em 0;
+
+  &__name {
+    font-size: 1.5em;
+    @include mobile() {
+      font-size: 1.2em;
+    }
+  }
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+
+  @include mobile() {
+    width: 90%;
+  }
+}
+
+.row {
+  //   background-color: #272727;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: monospace;
+  padding: 0 3em 0;
+
+  @include mobile() {
+    justify-content: center;
+  }
+
+  &__item {
+    width: 18em;
+
+    margin: 2em 0 auto;
+
+    @include mobile() {
+      width: 280px;
+      min-width: 250px;
+      margin: 1.5em;
+    }
+  }
+}
+
+.card {
+  border-radius: 0.5em;
+  background-color: #fff;
+  height: 22em;
+  box-shadow: 0 0 1em 0.2em rgba(0, 0, 0, 0.6);
+
+  position: relative;
+  overflow: hidden;
+
+  &__img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    // border-radius: inherit;
+    display: block;
+    transition: all 0.3s ease;
+    overflow: hidden;
+
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+
+  &__body {
+    position: relative;
+    padding: 1em 1.5em;
+    z-index: 2;
+    background-color: #fff;
+    border-top: 1px solid gray;
+
+    & h5 {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 0.3em;
+    }
+
+    & p {
+      opacity: 0.75;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 0;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    color: #ffffff99;
+    background-color: darken($color: skyblue, $amount: 50);
+
+    border-radius: 0 0 0.5em 0.5em;
+  }
+}
